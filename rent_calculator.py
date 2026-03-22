@@ -1,4 +1,7 @@
+
+# Function to calculate and split rent among persons
 def rent_calculator():
+ # Taking input for number of persons and various expenses
     persons=int(input("enter number of persons="))
     if persons<=0:
         print("invalid input")
@@ -36,7 +39,10 @@ def rent_calculator():
         print("invalid input")
         return
     total_rent=room_rent+water_bill+electricity_bill+furniture_rent+groceries+kitchen_appliances+washing_products+other_expenses
+    # Display total rent and rent per person
     print("total rent=",total_rent)
     rentPer_person=total_rent/persons
     print("rent per person=",rentPer_person)
+# Calling the rent calculator function
 rent_calculator()
+
